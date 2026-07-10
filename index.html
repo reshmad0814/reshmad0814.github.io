@@ -1,24 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Reshma Dhadwad | Data Analytics Portfolio</title>
-
-<meta name="description"
-content="Portfolio of Reshma Dhadwad - Data Analytics | Python | SQL | Power BI | Tableau">
+<title>Reshma Dhadwad | Data Analyst Portfolio</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 <style>
 
@@ -26,320 +18,209 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Poppins',sans-serif;
 scroll-behavior:smooth;
+font-family:'Poppins',sans-serif;
 }
 
 body{
 background:#0f172a;
-color:#fff;
-overflow-x:hidden;
+color:white;
 }
-
-/* Scrollbar */
-
-::-webkit-scrollbar{
-width:8px;
-}
-
-::-webkit-scrollbar-thumb{
-background:#38bdf8;
-border-radius:20px;
-}
-
-/* Navigation */
 
 nav{
-
 position:fixed;
 top:0;
-left:0;
 width:100%;
 display:flex;
 justify-content:space-between;
-align-items:center;
-padding:18px 8%;
-background:rgba(15,23,42,.95);
-backdrop-filter:blur(10px);
-z-index:1000;
-box-shadow:0 5px 20px rgba(0,0,0,.25);
-
+padding:20px 8%;
+background:#111827;
+z-index:999;
 }
 
-.logo{
-
-font-size:30px;
-font-weight:700;
+nav h2{
 color:#38bdf8;
-
 }
 
 nav ul{
-
 display:flex;
 list-style:none;
-
-}
-
-nav ul li{
-
-margin-left:30px;
-
+gap:30px;
 }
 
 nav ul li a{
-
 text-decoration:none;
-color:#fff;
-font-weight:500;
+color:white;
 transition:.3s;
-
 }
 
 nav ul li a:hover{
-
 color:#38bdf8;
-
 }
 
-/* Hero */
-
 .hero{
-
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:140px 10% 90px;
-gap:60px;
-flex-wrap:wrap;
+padding:140px 10%;
 min-height:100vh;
-
 }
 
-.hero-content{
-
-flex:1;
-
+.hero-text{
+max-width:600px;
 }
 
-.hero-content h3{
+.hero-text h3{
+font-size:24px;
+}
 
-font-size:28px;
+.hero-text h1{
+font-size:60px;
+margin:10px 0;
+}
+
+.hero-text span{
 color:#38bdf8;
-
 }
 
-.hero-content h1{
-
-font-size:58px;
-margin:15px 0;
-
-}
-
-.hero-content h2{
-
-font-size:30px;
-font-weight:500;
-margin-bottom:20px;
-color:#cbd5e1;
-
-}
-
-.hero-content p{
-
-font-size:18px;
-line-height:1.9;
+.hero-text p{
+line-height:1.8;
+margin:20px 0;
 color:#d1d5db;
-margin-bottom:35px;
-
-}
-
-.buttons{
-
-display:flex;
-gap:20px;
-flex-wrap:wrap;
-
 }
 
 .btn{
-
-padding:14px 34px;
-border-radius:40px;
+display:inline-block;
+padding:14px 28px;
+background:#38bdf8;
+color:#fff;
+border-radius:8px;
 text-decoration:none;
 font-weight:600;
-transition:.3s;
-
-}
-
-.primary{
-
-background:#38bdf8;
-color:#000;
-
-}
-
-.primary:hover{
-
-background:#fff;
-transform:translateY(-4px);
-
-}
-
-.secondary{
-
-border:2px solid #38bdf8;
-color:#38bdf8;
-
-}
-
-.secondary:hover{
-
-background:#38bdf8;
-color:#000;
-
-}
-
-/* Hero Image */
-
-.hero-image{
-
-flex:1;
-display:flex;
-justify-content:center;
-
-}
-
-.hero-image img{
-
-width:360px;
-height:360px;
-border-radius:50%;
-object-fit:cover;
-border:6px solid #38bdf8;
-box-shadow:0 0 35px rgba(56,189,248,.45);
 transition:.4s;
-
 }
 
-.hero-image img:hover{
-
-transform:scale(1.05);
-
-}
-
-/* Social */
-
-.social{
-
-margin-top:40px;
-display:flex;
-gap:18px;
-
-}
-
-.social a{
-
-width:50px;
-height:50px;
-display:flex;
-align-items:center;
-justify-content:center;
-border:2px solid #38bdf8;
-border-radius:50%;
-color:#38bdf8;
-font-size:22px;
-transition:.3s;
-text-decoration:none;
-
-}
-
-.social a:hover{
-
-background:#38bdf8;
-color:#000;
+.btn:hover{
 transform:translateY(-5px);
-
 }
 
-/* Common */
+.hero img{
+width:330px;
+border-radius:50%;
+border:6px solid #38bdf8;
+box-shadow:0 0 40px #38bdf8;
+}
 
 section{
-
-padding:90px 10%;
-
+padding:80px 10%;
 }
 
 .title{
-
-font-size:38px;
+font-size:40px;
 text-align:center;
-margin-bottom:60px;
+margin-bottom:40px;
 color:#38bdf8;
-
 }
 
-/* Responsive */
+.about{
+background:#1e293b;
+border-radius:20px;
+padding:40px;
+}
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+.skill-card{
+background:#1e293b;
+padding:30px;
+border-radius:18px;
+text-align:center;
+transition:.4s;
+}
+
+.skill-card:hover{
+transform:translateY(-12px);
+background:#38bdf8;
+}
+
+.skill-card i{
+font-size:45px;
+margin-bottom:20px;
+}
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+}
+
+.project{
+background:#1e293b;
+padding:30px;
+border-radius:20px;
+transition:.4s;
+}
+
+.project:hover{
+transform:scale(1.05);
+}
+
+.project h3{
+margin-bottom:15px;
+}
+
+.project p{
+margin-bottom:20px;
+color:#d1d5db;
+}
+
+.contact{
+text-align:center;
+}
+
+.social{
+margin-top:20px;
+}
+
+.social a{
+font-size:30px;
+margin:15px;
+color:white;
+transition:.3s;
+}
+
+.social a:hover{
+color:#38bdf8;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#111827;
+}
 
 @media(max-width:900px){
 
 .hero{
-
 flex-direction:column-reverse;
 text-align:center;
-
 }
 
-.hero-content h1{
-
-font-size:42px;
-
+.hero img{
+margin-bottom:40px;
+width:250px;
 }
 
-.hero-content h2{
-
-font-size:24px;
-
-}
-
-.hero-image img{
-
-width:280px;
-height:280px;
-
-}
-
-nav{
-
-flex-direction:column;
-padding:20px;
-
+.hero-text h1{
+font-size:45px;
 }
 
 nav ul{
-
-margin-top:15px;
-flex-wrap:wrap;
-justify-content:center;
-
-}
-
-nav ul li{
-
-margin:10px;
-
-}
-
-.buttons{
-
-justify-content:center;
-
-}
-
-.social{
-
-justify-content:center;
-
+display:none;
 }
 
 }
@@ -350,249 +231,182 @@ justify-content:center;
 
 <body>
 
-<!-- Navigation -->
-
 <nav>
 
-<div class="logo">
-
-Reshma
-
-</div>
+<h2>Reshma.</h2>
 
 <ul>
-
 <li><a href="#about">About</a></li>
-
 <li><a href="#skills">Skills</a></li>
-
 <li><a href="#projects">Projects</a></li>
-
-<li><a href="#education">Education</a></li>
-
 <li><a href="#contact">Contact</a></li>
-
 </ul>
 
 </nav>
 
-<!-- Hero Section -->
-
 <section class="hero">
 
-<div class="hero-content">
+<div class="hero-text">
 
 <h3>Hello, I'm</h3>
 
-<h1>Reshma Dhadwad</h1>
+<h1>Reshma <span>Dhadwad</span></h1>
 
-<h2>Data Analytics | Python | SQL | Power BI | Tableau</h2>
+<h3>Data Analyst | SQL Developer | Power BI Enthusiast</h3>
 
 <p>
-
-Passionate about transforming raw data into meaningful business insights.
-I enjoy solving real-world business problems using Python, SQL,
-Power BI, Tableau, Excel, Statistics, and Machine Learning while
-building interactive dashboards and data-driven solutions.
-
+Passionate about transforming raw data into actionable insights through analytics, visualization, and machine learning. Skilled in Python, SQL, Power BI, Tableau, and Excel with experience in building dashboards and solving business problems.
 </p>
 
-<div class="buttons">
-
-<a href="#projects" class="btn primary">
-
-View Projects
-
-</a>
-
-<a href="#contact" class="btn secondary">
-
-Contact Me
-
+<a href="https://github.com/reshmad0814" class="btn" target="_blank">
+<i class="fab fa-github"></i> Visit GitHub
 </a>
 
 </div>
+
+<div>
+
+<img src="YOUR_IMAGE.jpg">
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="title">About Me</h2>
+
+<div class="about">
+
+<p>
+
+I'm an aspiring Data Analyst passionate about data visualization, business intelligence, and machine learning. I enjoy creating interactive dashboards, writing efficient SQL queries, and solving real-world business challenges using data-driven approaches.
+
+</p>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2 class="title">Technical Skills</h2>
+
+<div class="skills">
+
+<div class="skill-card">
+<i class="fab fa-python"></i>
+<h3>Python</h3>
+</div>
+
+<div class="skill-card">
+<i class="fas fa-database"></i>
+<h3>SQL</h3>
+</div>
+
+<div class="skill-card">
+<i class="fas fa-chart-line"></i>
+<h3>Power BI</h3>
+</div>
+
+<div class="skill-card">
+<i class="fas fa-chart-pie"></i>
+<h3>Tableau</h3>
+</div>
+
+<div class="skill-card">
+<i class="fas fa-file-excel"></i>
+<h3>Excel</h3>
+</div>
+
+<div class="skill-card">
+<i class="fab fa-git-alt"></i>
+<h3>Git & GitHub</h3>
+</div>
+
+<div class="skill-card">
+<i class="fas fa-brain"></i>
+<h3>Machine Learning</h3>
+</div>
+
+<div class="skill-card">
+<i class="fas fa-chart-bar"></i>
+<h3>Data Analytics</h3>
+</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2 class="title">Featured Projects</h2>
+
+<div class="projects">
+
+<div class="project">
+
+<h3>Fundraising Analysis Dashboard</h3>
+
+<p>
+Interactive Power BI dashboard for fundraising performance, KPI analysis, marketing insights, and donor analytics.
+</p>
+
+</div>
+
+<div class="project">
+
+<h3>Nexus Pay SQL Database</h3>
+
+<p>
+Designed an RDBMS with optimized SQL queries for fintech transaction analysis and reporting.
+</p>
+
+</div>
+
+<div class="project">
+
+<h3>Aerox Aviation Database</h3>
+
+<p>
+Developed a complete MySQL database for airline booking, passenger management, revenue tracking, and reporting.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="title">Let's Connect</h2>
+
+<div class="contact">
+
+<p>Email: reshmadhadwad82@gmail.com</p>
 
 <div class="social">
 
 <a href="https://github.com/reshmad0814" target="_blank">
-
 <i class="fab fa-github"></i>
-
 </a>
 
-<a href="https://www.linkedin.com/" target="_blank">
-
+<a href="https://linkedin.com/" target="_blank">
 <i class="fab fa-linkedin"></i>
-
-</a>
-
-<a href="mailto:reshmadhadwad82@gmail.com">
-
-<i class="fas fa-envelope"></i>
-
 </a>
 
 </div>
 
 </div>
-
-<div class="hero-image">
-
-<img
-src="https://avatars.githubusercontent.com/reshmad0814?v=4"
-alt="Reshma Dhadwad">
-
-</div>
-
-<!--======================
-      SKILLS SECTION
-=======================-->
-
-<section id="skills" class="skills">
-
-    <h2 class="section-title">Technical Skills</h2>
-
-    <p class="section-subtitle">
-        Turning raw data into meaningful insights with modern analytics tools.
-    </p>
-
-    <div class="skills-wrapper">
-
-        <!-- Programming -->
-        <div class="skill-category">
-
-            <h3>💻 Programming</h3>
-
-            <div class="skill">
-
-                <div class="skill-header">
-                    <span>Python</span>
-                    <span>90%</span>
-                </div>
-
-                <div class="progress-bar">
-                    <div class="progress python"></div>
-                </div>
-
-            </div>
-
-            <div class="skill">
-
-                <div class="skill-header">
-                    <span>SQL</span>
-                    <span>95%</span>
-                </div>
-
-                <div class="progress-bar">
-                    <div class="progress sql"></div>
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- BI Tools -->
-
-        <div class="skill-category">
-
-            <h3>📊 Business Intelligence</h3>
-
-            <div class="skill">
-
-                <div class="skill-header">
-                    <span>Power BI</span>
-                    <span>92%</span>
-                </div>
-
-                <div class="progress-bar">
-                    <div class="progress powerbi"></div>
-                </div>
-
-            </div>
-
-            <div class="skill">
-
-                <div class="skill-header">
-                    <span>Tableau</span>
-                    <span>88%</span>
-                </div>
-
-                <div class="progress-bar">
-                    <div class="progress tableau"></div>
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- Analytics -->
-
-        <div class="skill-category">
-
-            <h3>📈 Analytics</h3>
-
-            <div class="skill">
-
-                <div class="skill-header">
-                    <span>Excel</span>
-                    <span>95%</span>
-                </div>
-
-                <div class="progress-bar">
-                    <div class="progress excel"></div>
-                </div>
-
-            </div>
-
-            <div class="skill">
-
-                <div class="skill-header">
-                    <span>Statistics</span>
-                    <span>85%</span>
-                </div>
-
-                <div class="progress-bar">
-                    <div class="progress stats"></div>
-                </div>
-
-            </div>
-
-            <div class="skill">
-
-                <div class="skill-header">
-                    <span>Machine Learning</span>
-                    <span>80%</span>
-                </div>
-
-                <div class="progress-bar">
-                    <div class="progress ml"></div>
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- Libraries -->
-
-        <div class="skill-category">
-
-            <h3>📚 Libraries</h3>
-
-            <div class="tags">
-
-                <span>Pandas</span>
-                <span>NumPy</span>
-                <span>Matplotlib</span>
-                <span>Seaborn</span>
-                <span>Scikit-Learn</span>
-                <span>Git</span>
-                <span>GitHub</span>
-
-            </div>
-
-        </div>
-
-    </div>
 
 </section>
+
+<footer>
+
+© 2026 Reshma Dhadwad | Data Analyst Portfolio
+
+</footer>
+
+</body>
+</html>
