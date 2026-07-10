@@ -4,19 +4,21 @@
 <head>
 
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Reshma Dhadwad | Data Analytics Portfolio</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
+<meta name="description"
+content="Portfolio of Reshma Dhadwad - Data Analytics | Python | SQL | Power BI | Tableau">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
 
 <link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
 <style>
 
@@ -34,93 +36,135 @@ color:#fff;
 overflow-x:hidden;
 }
 
+/* Scrollbar */
+
+::-webkit-scrollbar{
+width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+background:#38bdf8;
+border-radius:20px;
+}
+
+/* Navigation */
+
 nav{
+
 position:fixed;
 top:0;
+left:0;
 width:100%;
 display:flex;
 justify-content:space-between;
 align-items:center;
 padding:18px 8%;
-background:#111827;
-z-index:999;
-box-shadow:0 5px 15px rgba(0,0,0,.3);
+background:rgba(15,23,42,.95);
+backdrop-filter:blur(10px);
+z-index:1000;
+box-shadow:0 5px 20px rgba(0,0,0,.25);
+
 }
 
 .logo{
-font-size:28px;
+
+font-size:30px;
 font-weight:700;
 color:#38bdf8;
+
 }
 
 nav ul{
+
 display:flex;
 list-style:none;
+
 }
 
 nav ul li{
+
 margin-left:30px;
+
 }
 
 nav ul li a{
+
 text-decoration:none;
-color:white;
-transition:.3s;
+color:#fff;
 font-weight:500;
+transition:.3s;
+
 }
 
 nav ul li a:hover{
+
 color:#38bdf8;
+
 }
 
-section{
-padding:90px 10%;
-}
+/* Hero */
 
 .hero{
 
 display:flex;
 justify-content:space-between;
 align-items:center;
-min-height:100vh;
+padding:140px 10% 90px;
 gap:60px;
 flex-wrap:wrap;
+min-height:100vh;
+
 }
 
 .hero-content{
+
 flex:1;
+
+}
+
+.hero-content h3{
+
+font-size:28px;
+color:#38bdf8;
+
 }
 
 .hero-content h1{
 
-font-size:55px;
-margin-bottom:10px;
+font-size:58px;
+margin:15px 0;
 
 }
 
 .hero-content h2{
 
-color:#38bdf8;
+font-size:30px;
 font-weight:500;
 margin-bottom:20px;
+color:#cbd5e1;
 
 }
 
 .hero-content p{
 
-color:#cbd5e1;
-line-height:2;
 font-size:18px;
-margin-bottom:30px;
+line-height:1.9;
+color:#d1d5db;
+margin-bottom:35px;
+
+}
+
+.buttons{
+
+display:flex;
+gap:20px;
+flex-wrap:wrap;
 
 }
 
 .btn{
 
-display:inline-block;
-padding:13px 35px;
-background:#38bdf8;
-color:black;
+padding:14px 34px;
 border-radius:40px;
 text-decoration:none;
 font-weight:600;
@@ -128,12 +172,35 @@ transition:.3s;
 
 }
 
-.btn:hover{
+.primary{
 
-background:white;
-transform:translateY(-3px);
+background:#38bdf8;
+color:#000;
 
 }
+
+.primary:hover{
+
+background:#fff;
+transform:translateY(-4px);
+
+}
+
+.secondary{
+
+border:2px solid #38bdf8;
+color:#38bdf8;
+
+}
+
+.secondary:hover{
+
+background:#38bdf8;
+color:#000;
+
+}
+
+/* Hero Image */
 
 .hero-image{
 
@@ -145,12 +212,12 @@ justify-content:center;
 
 .hero-image img{
 
-width:340px;
-height:340px;
+width:360px;
+height:360px;
 border-radius:50%;
-border:6px solid #38bdf8;
 object-fit:cover;
-box-shadow:0 0 35px rgba(56,189,248,.4);
+border:6px solid #38bdf8;
+box-shadow:0 0 35px rgba(56,189,248,.45);
 transition:.4s;
 
 }
@@ -161,157 +228,62 @@ transform:scale(1.05);
 
 }
 
-.title{
+/* Social */
 
-font-size:36px;
-color:#38bdf8;
-margin-bottom:40px;
-text-align:center;
+.social{
+
+margin-top:40px;
+display:flex;
+gap:18px;
 
 }
 
-.about-container{
+.social a{
 
+width:50px;
+height:50px;
 display:flex;
-justify-content:space-between;
 align-items:center;
-gap:60px;
-flex-wrap:wrap;
-
-}
-
-.about-text{
-
-flex:1;
-
-}
-
-.about-text h3{
-
-font-size:30px;
-margin-bottom:20px;
-
-}
-
-.about-text p{
-
-font-size:18px;
-line-height:2;
-color:#d1d5db;
-margin-bottom:20px;
-
-}
-
-.about-image{
-
-flex:1;
-display:flex;
 justify-content:center;
-
-}
-
-.about-image img{
-
-width:320px;
-height:320px;
+border:2px solid #38bdf8;
 border-radius:50%;
-border:5px solid #38bdf8;
-
-}
-
-.skills{
-
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
-gap:20px;
-
-}
-
-.skill{
-
-background:#1e293b;
-padding:25px;
-border-radius:15px;
-text-align:center;
+color:#38bdf8;
+font-size:22px;
 transition:.3s;
-font-weight:600;
+text-decoration:none;
 
 }
 
-.skill:hover{
+.social a:hover{
 
 background:#38bdf8;
-color:black;
-transform:translateY(-8px);
+color:#000;
+transform:translateY(-5px);
 
 }
 
-.projects{
+/* Common */
 
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-gap:25px;
+section{
 
-}
-
-.card{
-
-background:#1e293b;
-padding:25px;
-border-radius:15px;
-transition:.3s;
+padding:90px 10%;
 
 }
 
-.card:hover{
+.title{
 
-transform:translateY(-10px);
-
-}
-
-.card h3{
-
+font-size:38px;
+text-align:center;
+margin-bottom:60px;
 color:#38bdf8;
-margin-bottom:15px;
 
 }
 
-.card p{
+/* Responsive */
 
-line-height:1.8;
-color:#d1d5db;
+@media(max-width:900px){
 
-}
-
-.card a{
-
-display:inline-block;
-margin-top:20px;
-color:#38bdf8;
-text-decoration:none;
-font-weight:600;
-
-}
-
-.stats{
-
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(420px,1fr));
-gap:30px;
-
-}
-
-.stats img{
-
-width:100%;
-border-radius:12px;
-
-}
-
-@media(max-width:768px){
-
-.hero,
-.about-container{
+.hero{
 
 flex-direction:column-reverse;
 text-align:center;
@@ -320,20 +292,53 @@ text-align:center;
 
 .hero-content h1{
 
-font-size:40px;
+font-size:42px;
+
+}
+
+.hero-content h2{
+
+font-size:24px;
 
 }
 
 .hero-image img{
 
-width:260px;
-height:260px;
+width:280px;
+height:280px;
 
 }
 
-.stats{
+nav{
 
-grid-template-columns:1fr;
+flex-direction:column;
+padding:20px;
+
+}
+
+nav ul{
+
+margin-top:15px;
+flex-wrap:wrap;
+justify-content:center;
+
+}
+
+nav ul li{
+
+margin:10px;
+
+}
+
+.buttons{
+
+justify-content:center;
+
+}
+
+.social{
+
+justify-content:center;
 
 }
 
@@ -344,6 +349,8 @@ grid-template-columns:1fr;
 </head>
 
 <body>
+
+<!-- Navigation -->
 
 <nav>
 
@@ -361,17 +368,23 @@ Reshma
 
 <li><a href="#projects">Projects</a></li>
 
+<li><a href="#education">Education</a></li>
+
 <li><a href="#contact">Contact</a></li>
 
 </ul>
 
 </nav>
 
+<!-- Hero Section -->
+
 <section class="hero">
 
 <div class="hero-content">
 
-<h1>Hi, I'm Reshma Dhadwad 👋</h1>
+<h3>Hello, I'm</h3>
+
+<h1>Reshma Dhadwad</h1>
 
 <h2>Data Analytics | Python | SQL | Power BI | Tableau</h2>
 
@@ -379,327 +392,57 @@ Reshma
 
 Passionate about transforming raw data into meaningful business insights.
 I enjoy solving real-world business problems using Python, SQL,
-Power BI, Tableau, Excel and Machine Learning.
+Power BI, Tableau, Excel, Statistics, and Machine Learning while
+building interactive dashboards and data-driven solutions.
 
 </p>
 
-<a href="#contact" class="btn">
+<div class="buttons">
 
-Let's Connect
+<a href="#projects" class="btn primary">
+
+View Projects
+
+</a>
+
+<a href="#contact" class="btn secondary">
+
+Contact Me
 
 </a>
 
 </div>
 
-<div class="hero-image">
+<div class="social">
 
-<img src="https://avatars.githubusercontent.com/reshmad0814?v=4">
+<a href="https://github.com/reshmad0814" target="_blank">
+
+<i class="fab fa-github"></i>
+
+</a>
+
+<a href="https://www.linkedin.com/" target="_blank">
+
+<i class="fab fa-linkedin"></i>
+
+</a>
+
+<a href="mailto:reshmadhadwad82@gmail.com">
+
+<i class="fas fa-envelope"></i>
+
+</a>
 
 </div>
 
-</section>
+</div>
 
+<div class="hero-image">
 
-  <!-- ================= ABOUT SECTION ================= -->
+<img
+src="https://avatars.githubusercontent.com/reshmad0814?v=4"
+alt="Reshma Dhadwad">
 
-<section id="about">
-
-    <h2 class="title">About Me</h2>
-
-    <div class="about-container">
-
-        <div class="about-text">
-
-            <h3>Hello, I'm Reshma 👋</h3>
-
-            <p>
-                I'm a B.Sc. Information Technology student specializing in
-                <strong>Data Analytics</strong> with a passion for transforming
-                raw data into meaningful business insights.
-            </p>
-
-            <p>
-                I enjoy solving real-world business problems using
-                <strong>Python, SQL, Power BI, Tableau, Excel, Statistics,
-                and Machine Learning.</strong>
-            </p>
-
-            <p>
-                My interests include Data Visualization, Business Intelligence,
-                Exploratory Data Analysis (EDA), Dashboard Development,
-                Database Design, and Predictive Analytics.
-            </p>
-
-            <p>
-                I continuously work on real-world projects to strengthen my
-                analytical thinking and technical skills while building a
-                strong portfolio for Data Analyst roles.
-            </p>
-
-            <a href="#projects" class="btn">
-                View My Projects
-            </a>
-
-        </div>
-
-        <div class="about-image">
-
-            <img src="https://avatars.githubusercontent.com/reshmad0814?v=4"
-                alt="Reshma Dhadwad">
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ================= SKILLS ================= -->
-
-<section id="skills">
-
-    <h2 class="title">Technical Skills</h2>
-
-    <div class="skills">
-
-        <div class="skill">
-            <i class="fab fa-python fa-2x"></i>
-            <br><br>
-            Python
-        </div>
-
-        <div class="skill">
-            <i class="fas fa-database fa-2x"></i>
-            <br><br>
-            SQL
-        </div>
-
-        <div class="skill">
-            <i class="fas fa-chart-bar fa-2x"></i>
-            <br><br>
-            Power BI
-        </div>
-
-        <div class="skill">
-            <i class="fas fa-chart-line fa-2x"></i>
-            <br><br>
-            Tableau
-        </div>
-
-        <div class="skill">
-            <i class="fas fa-file-excel fa-2x"></i>
-            <br><br>
-            Excel
-        </div>
-
-        <div class="skill">
-            <i class="fas fa-brain fa-2x"></i>
-            <br><br>
-            Machine Learning
-        </div>
-
-        <div class="skill">
-            <i class="fas fa-chart-pie fa-2x"></i>
-            <br><br>
-            Statistics
-        </div>
-
-        <div class="skill">
-            <i class="fab fa-git-alt fa-2x"></i>
-            <br><br>
-            Git & GitHub
-        </div>
-
-        <div class="skill">
-            <i class="fas fa-broom fa-2x"></i>
-            <br><br>
-            Data Cleaning
-        </div>
-
-        <div class="skill">
-            <i class="fas fa-search fa-2x"></i>
-            <br><br>
-            EDA
-        </div>
-
-        <div class="skill">
-            <i class="fas fa-table fa-2x"></i>
-            <br><br>
-            Pandas
-        </div>
-
-        <div class="skill">
-            <i class="fas fa-calculator fa-2x"></i>
-            <br><br>
-            NumPy
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ================= PROJECTS ================= -->
-
-<section id="projects">
-
-    <h2 class="title">Featured Projects</h2>
-
-    <div class="projects">
-
-        <div class="card">
-
-            <h3>📊 Fundraising Analytics Dashboard</h3>
-
-            <p>
-                Developed an interactive Power BI dashboard to analyze
-                fundraising campaigns, marketing performance,
-                donation trends, ROI, and campaign effectiveness.
-            </p>
-
-            <a href="https://github.com/reshmad0814">
-                View Project →
-            </a>
-
-        </div>
-
-        <div class="card">
-
-            <h3>💳 Nexus Pay SQL Database</h3>
-
-            <p>
-                Designed a complete relational database for a digital
-                payment platform including ER diagrams, SQL queries,
-                business reports, and operational analysis.
-            </p>
-
-            <a href="https://github.com/reshmad0814">
-                View Project →
-            </a>
-
-        </div>
-
-        <div class="card">
-
-            <h3>✈️ Aerox Aviation Management</h3>
-
-            <p>
-                Built an airline management database with SQL,
-                normalized schema design, business analytics,
-                revenue analysis, and reporting dashboards.
-            </p>
-
-            <a href="https://github.com/reshmad0814">
-                View Project →
-            </a>
-
-        </div>
-
-        <div class="card">
-
-            <h3>📈 Employee Performance Dashboard</h3>
-
-            <p>
-                Designed an HR analytics dashboard to evaluate
-                employee performance, training effectiveness,
-                ROI, KPIs, and organizational insights.
-            </p>
-
-            <a href="https://github.com/reshmad0814">
-                View Project →
-            </a>
-
-        </div>
-
-        <div class="card">
-
-            <h3>🛒 Retail Sales Analysis</h3>
-
-            <p>
-                Analyzed retail sales data using SQL and Power BI
-                to identify customer behavior, product performance,
-                sales trends, and business growth opportunities.
-            </p>
-
-            <a href="https://github.com/reshmad0814">
-                View Project →
-            </a>
-
-        </div>
-
-        <div class="card">
-
-            <h3>📉 Insurance Claims Dashboard</h3>
-
-            <p>
-                Built Tableau dashboards to analyze insurance claims,
-                customer demographics, policy performance,
-                and claim severity trends.
-            </p>
-
-            <a href="https://github.com/reshmad0814">
-                View Project →
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ================= EDUCATION ================= -->
-
-<section id="education">
-
-    <h2 class="title">Education</h2>
-
-    <div class="projects">
-
-        <div class="card">
-
-            <h3>B.Sc. Information Technology</h3>
-
-            <p>
-
-                <strong>University of Mumbai</strong>
-
-                <br><br>
-
-                Specialization:
-                <strong>Data Analytics</strong>
-
-                <br><br>
-
-                2024 – 2027
-
-                <br><br>
-
-                Currently focused on Python, SQL,
-                Statistics, Machine Learning,
-                Data Visualization,
-                Business Intelligence,
-                and Database Management Systems.
-
-            </p>
-
-        </div>
-
-        <div class="card">
-
-            <h3>Career Objective</h3>
-
-            <p>
-
-                Seeking an opportunity as a
-                <strong>Data Analyst</strong>
-                where I can leverage my analytical,
-                technical, and problem-solving skills
-                to transform data into actionable
-                business insights while continuously
-                learning and growing professionally.
-
-            </p>
-
-        </div>
-
-    </div>
+</div>
 
 </section>
