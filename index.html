@@ -1,218 +1,412 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reshma Dhadwad | Data Analyst Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+<title>Reshma Dhadwad | Data Analyst Portfolio</title>
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+padding:20px 8%;
+background:#111827;
+z-index:999;
+}
+
+nav h2{
+color:#38bdf8;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#38bdf8;
+}
+
+.hero{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:140px 10%;
+min-height:100vh;
+}
+
+.hero-text{
+max-width:600px;
+}
+
+.hero-text h3{
+font-size:24px;
+}
+
+.hero-text h1{
+font-size:60px;
+margin:10px 0;
+}
+
+.hero-text span{
+color:#38bdf8;
+}
+
+.hero-text p{
+line-height:1.8;
+margin:20px 0;
+color:#d1d5db;
+}
+
+.btn{
+display:inline-block;
+padding:14px 28px;
+background:#38bdf8;
+color:#fff;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+transition:.4s;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+}
+
+.hero img{
+width:330px;
+border-radius:50%;
+border:6px solid #38bdf8;
+box-shadow:0 0 40px #38bdf8;
+}
+
+section{
+padding:80px 10%;
+}
+
+.title{
+font-size:40px;
+text-align:center;
+margin-bottom:40px;
+color:#38bdf8;
+}
+
+.about{
+background:#1e293b;
+border-radius:20px;
+padding:40px;
+}
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+.skill-card{
+background:#1e293b;
+padding:30px;
+border-radius:18px;
+text-align:center;
+transition:.4s;
+}
+
+.skill-card:hover{
+transform:translateY(-12px);
+background:#38bdf8;
+}
+
+.skill-card i{
+font-size:45px;
+margin-bottom:20px;
+}
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+}
+
+.project{
+background:#1e293b;
+padding:30px;
+border-radius:20px;
+transition:.4s;
+}
+
+.project:hover{
+transform:scale(1.05);
+}
+
+.project h3{
+margin-bottom:15px;
+}
+
+.project p{
+margin-bottom:20px;
+color:#d1d5db;
+}
+
+.contact{
+text-align:center;
+}
+
+.social{
+margin-top:20px;
+}
+
+.social a{
+font-size:30px;
+margin:15px;
+color:white;
+transition:.3s;
+}
+
+.social a:hover{
+color:#38bdf8;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#111827;
+}
+
+@media(max-width:900px){
+
+.hero{
+flex-direction:column-reverse;
+text-align:center;
+}
+
+.hero img{
+margin-bottom:40px;
+width:250px;
+}
+
+.hero-text h1{
+font-size:45px;
+}
+
+nav ul{
+display:none;
+}
+
+}
+
+</style>
+
 </head>
 
 <body>
 
-    <!-- ================= NAVBAR ================= -->
+<nav>
 
-    <header>
+<h2>Reshma.</h2>
 
-        <nav class="navbar">
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
 
-            <div class="logo">
-                <span>Reshma</span>
-            </div>
+</nav>
 
-            <ul class="nav-links">
+<section class="hero">
 
-                <li><a href="#home">Home</a></li>
+<div class="hero-text">
 
-                <li><a href="#about">About</a></li>
+<h3>Hello, I'm</h3>
 
-                <li><a href="#skills">Skills</a></li>
+<h1>Reshma <span>Dhadwad</span></h1>
 
-                <li><a href="#projects">Projects</a></li>
+<h3>Data Analyst | SQL Developer | Power BI Enthusiast</h3>
 
-                <li><a href="#contact">Contact</a></li>
+<p>
+Passionate about transforming raw data into actionable insights through analytics, visualization, and machine learning. Skilled in Python, SQL, Power BI, Tableau, and Excel with experience in building dashboards and solving business problems.
+</p>
 
-            </ul>
+<a href="https://github.com/reshmad0814" class="btn" target="_blank">
+<i class="fab fa-github"></i> Visit GitHub
+</a>
 
-        </nav>
+</div>
 
-    </header>
+<div>
 
+<img src="YOUR_IMAGE.jpg">
 
-    <!-- ================= HERO SECTION ================= -->
+</div>
 
-    <section id="home" class="hero">
+</section>
 
-        <div class="hero-content">
+<section id="about">
 
-            <p class="hello">Hello, I'm 👋</p>
+<h2 class="title">About Me</h2>
 
-            <h1>Reshma <span>Dhadwad</span></h1>
+<div class="about">
 
-            <h2>Data Analyst | SQL Developer | Power BI Enthusiast</h2>
+<p>
 
-            <p class="description">
+I'm an aspiring Data Analyst passionate about data visualization, business intelligence, and machine learning. I enjoy creating interactive dashboards, writing efficient SQL queries, and solving real-world business challenges using data-driven approaches.
 
-                Passionate about transforming raw data into meaningful insights using
-                <strong>Python</strong>,
-                <strong>SQL</strong>,
-                <strong>Power BI</strong>,
-                <strong>Tableau</strong>,
-                and
-                <strong>Machine Learning</strong>.
+</p>
 
-                I enjoy solving real-world business problems through data visualization,
-                analytics, and dashboard development.
+</div>
 
-            </p>
+</section>
 
-            <div class="hero-buttons">
+<section id="skills">
 
-                <a href="#projects" class="btn">
-                    View Projects
-                </a>
+<h2 class="title">Technical Skills</h2>
 
-                <a href="https://github.com/reshmad0814"
-                    target="_blank"
-                    class="btn secondary">
+<div class="skills">
 
-                    <i class="fab fa-github"></i>
+<div class="skill-card">
+<i class="fab fa-python"></i>
+<h3>Python</h3>
+</div>
 
-                    GitHub
+<div class="skill-card">
+<i class="fas fa-database"></i>
+<h3>SQL</h3>
+</div>
 
-                </a>
+<div class="skill-card">
+<i class="fas fa-chart-line"></i>
+<h3>Power BI</h3>
+</div>
 
-            </div>
+<div class="skill-card">
+<i class="fas fa-chart-pie"></i>
+<h3>Tableau</h3>
+</div>
 
-            <div class="social-icons">
+<div class="skill-card">
+<i class="fas fa-file-excel"></i>
+<h3>Excel</h3>
+</div>
 
-                <a href="https://github.com/reshmad0814" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
+<div class="skill-card">
+<i class="fab fa-git-alt"></i>
+<h3>Git & GitHub</h3>
+</div>
 
-                <a href="https://linkedin.com/in/YOUR-LINKEDIN" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
+<div class="skill-card">
+<i class="fas fa-brain"></i>
+<h3>Machine Learning</h3>
+</div>
 
-                <a href="mailto:reshmadhadwad82@gmail.com">
-                    <i class="fas fa-envelope"></i>
-                </a>
+<div class="skill-card">
+<i class="fas fa-chart-bar"></i>
+<h3>Data Analytics</h3>
+</div>
 
-            </div>
+</div>
 
-        </div>
+</section>
 
-        <div class="hero-image">
+<section id="projects">
 
-            <!-- Replace with your photo -->
-            <img src="images/profile.png" alt="Reshma Dhadwad">
+<h2 class="title">Featured Projects</h2>
 
-        </div>
+<div class="projects">
 
-    </section>
+<div class="project">
 
+<h3>Fundraising Analysis Dashboard</h3>
 
-    <!-- ================= ABOUT SECTION ================= -->
+<p>
+Interactive Power BI dashboard for fundraising performance, KPI analysis, marketing insights, and donor analytics.
+</p>
 
-    <section id="about" class="about">
+</div>
 
-        <div class="section-title">
+<div class="project">
 
-            <h2>About Me</h2>
+<h3>Nexus Pay SQL Database</h3>
 
-            <p>Know more about me</p>
+<p>
+Designed an RDBMS with optimized SQL queries for fintech transaction analysis and reporting.
+</p>
 
-        </div>
+</div>
 
-        <div class="about-container">
+<div class="project">
 
-            <div class="about-text">
+<h3>Aerox Aviation Database</h3>
 
-                <h3>Data Analyst & Business Intelligence Enthusiast</h3>
+<p>
+Developed a complete MySQL database for airline booking, passenger management, revenue tracking, and reporting.
+</p>
 
-                <p>
+</div>
 
-                    I am a passionate Data Analyst with strong knowledge of
-                    data analysis, SQL, Python, Power BI, Tableau, and Excel.
-                    I enjoy exploring datasets, creating insightful dashboards,
-                    and solving business challenges using data-driven approaches.
+</div>
 
-                </p>
+</section>
 
-                <p>
+<section id="contact">
 
-                    My goal is to transform complex data into meaningful insights
-                    that help organizations make better decisions.
+<h2 class="title">Let's Connect</h2>
 
-                    I continuously improve my skills through hands-on projects,
-                    real-world datasets, and practical business case studies.
+<div class="contact">
 
-                </p>
+<p>Email: reshmadhadwad82@gmail.com</p>
 
-            </div>
+<div class="social">
 
-            <div class="about-details">
+<a href="https://github.com/reshmad0814" target="_blank">
+<i class="fab fa-github"></i>
+</a>
 
-                <div class="detail-box">
+<a href="https://linkedin.com/" target="_blank">
+<i class="fab fa-linkedin"></i>
+</a>
 
-                    <i class="fas fa-user"></i>
+</div>
 
-                    <h4>Name</h4>
+</div>
 
-                    <p>Reshma Dhadwad</p>
+</section>
 
-                </div>
+<footer>
 
-                <div class="detail-box">
+© 2026 Reshma Dhadwad | Data Analyst Portfolio
 
-                    <i class="fas fa-envelope"></i>
-
-                    <h4>Email</h4>
-
-                    <p>reshmadhadwad82@gmail.com</p>
-
-                </div>
-
-                <div class="detail-box">
-
-                    <i class="fas fa-graduation-cap"></i>
-
-                    <h4>Education</h4>
-
-                    <p>B.Sc. Information Technology</p>
-
-                </div>
-
-                <div class="detail-box">
-
-                    <i class="fas fa-location-dot"></i>
-
-                    <h4>Location</h4>
-
-                    <p>Mumbai, India</p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= SKILLS SECTION ================= -->
-    <!-- Part 2 Starts Here -->
+</footer>
 
 </body>
-
 </html>
