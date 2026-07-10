@@ -1,161 +1,418 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Data Scientist Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    body {
-      background: #f4f7fb;
-      color: #222;
-      line-height: 1.6;
-    }
+<title>Reshma Dhadwad | Data Analytics Portfolio</title>
 
-    header {
-      background: linear-gradient(135deg, #0f172a, #2563eb);
-      color: white;
-      padding: 80px 20px;
-      text-align: center;
-    }
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-    }
+<style>
 
-    header p {
-      font-size: 1.2rem;
-      max-width: 700px;
-      margin: auto;
-    }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
 
-    .container {
-      width: 90%;
-      max-width: 1200px;
-      margin: auto;
-      padding: 50px 0;
-    }
+body{
+background:#0f172a;
+color:white;
+}
 
-    section {
-      margin-bottom: 60px;
-    }
+header{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+background:linear-gradient(135deg,#1e293b,#0f172a,#111827);
+}
 
-    .section-title {
-      font-size: 2rem;
-      color: #2563eb;
-      margin-bottom: 20px;
-      position: relative;
-    }
+.hero h1{
+font-size:55px;
+}
 
-    .section-title::after {
-      content: "";
-      width: 80px;
-      height: 4px;
-      background: #2563eb;
-      position: absolute;
-      left: 0;
-      bottom: -10px;
-      border-radius: 20px;
-    }
+.hero h2{
+color:#38bdf8;
+margin:10px 0;
+font-weight:500;
+}
 
-    .about {
-      background: white;
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-    }
+.hero p{
+max-width:700px;
+margin:auto;
+line-height:1.8;
+color:#cbd5e1;
+}
 
-    .skills {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
+.btn{
+display:inline-block;
+margin-top:30px;
+padding:12px 30px;
+background:#38bdf8;
+color:#000;
+text-decoration:none;
+border-radius:30px;
+font-weight:600;
+transition:.3s;
+}
 
-    .skill-card {
-      background: white;
-      padding: 25px;
-      border-radius: 15px;
-      text-align: center;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-      transition: transform 0.3s ease;
-    }
+.btn:hover{
+background:white;
+}
 
-    .skill-card:hover {
-      transform: translateY(-5px);
-    }
+section{
+padding:80px 10%;
+}
 
-    .skill-card h3 {
-      color: #2563eb;
-      margin-bottom: 10px;
-    }
+.title{
+font-size:35px;
+margin-bottom:40px;
+color:#38bdf8;
+}
 
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 25px;
-    }
+.about{
+display:grid;
+grid-template-columns:1fr 2fr;
+gap:40px;
+align-items:center;
+}
 
-    .project-card {
-      background: white;
-      padding: 25px;
-      border-radius: 15px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-      transition: 0.3s;
-    }
+.about img{
+width:250px;
+border-radius:50%;
+border:5px solid #38bdf8;
+}
 
-    .project-card:hover {
-      transform: scale(1.02);
-    }
+.about p{
+line-height:2;
+color:#d1d5db;
+}
 
-    .project-card h3 {
-      color: #2563eb;
-      margin-bottom: 12px;
-    }
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:20px;
+}
 
-    .contact {
-      background: linear-gradient(135deg, #2563eb, #0f172a);
-      color: white;
-      padding: 40px;
-      border-radius: 20px;
-      text-align: center;
-    }
+.skill{
+background:#1e293b;
+padding:20px;
+border-radius:12px;
+text-align:center;
+transition:.3s;
+}
 
-    .contact p {
-      margin: 10px 0;
-      font-size: 1.1rem;
-    }
+.skill:hover{
+background:#38bdf8;
+color:black;
+transform:translateY(-8px);
+}
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #0f172a;
-      color: white;
-      margin-top: 40px;
-    }
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
 
-    @media(max-width: 768px) {
-      header h1 {
-        font-size: 2.2rem;
-      }
+.card{
+background:#1e293b;
+padding:25px;
+border-radius:15px;
+transition:.3s;
+}
 
-      .section-title {
-        font-size: 1.6rem;
-      }
-    }
-  </style>
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h3{
+color:#38bdf8;
+margin-bottom:15px;
+}
+
+.card p{
+line-height:1.8;
+color:#d1d5db;
+margin-bottom:20px;
+}
+
+.card a{
+text-decoration:none;
+color:#38bdf8;
+font-weight:600;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(400px,1fr));
+gap:30px;
+text-align:center;
+}
+
+.stats img{
+width:100%;
+border-radius:10px;
+}
+
+.contact{
+text-align:center;
+}
+
+.contact p{
+margin:15px 0;
+font-size:18px;
+}
+
+footer{
+padding:30px;
+text-align:center;
+background:#020617;
+color:#94a3b8;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:38px;
+}
+
+.about{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+.about img{
+margin:auto;
+}
+
+.stats{
+grid-template-columns:1fr;
+}
+
+}
+
+</style>
+
 </head>
+
 <body>
 
-  <header>
-    <h1>Data Scientist Portfolio</h1>
-    <p>
+<header>
+
+<div class="hero">
+
+<h1>Hi, I'm Reshma Dhadwad 👋</h1>
+
+<h2>Data Analytics | Python | SQL | Power BI | Tableau</h2>
+
+<p>
+Passionate about transforming raw data into meaningful business insights.
+I enjoy solving real-world problems using Python, SQL, Excel, Power BI,
+Tableau, and Machine Learning while building interactive dashboards and
+data-driven solutions.
+</p>
+
+<a href="#projects" class="btn">View Projects</a>
+
+</div>
+
+</header>
+
+<section id="about">
+
+<h2 class="title">About Me</h2>
+
+<div class="about">
+
+<img src="https://avatars.githubusercontent.com/reshmad0814?v=4" alt="Profile">
+
+<div>
+
+<p>
+
+I'm a B.Sc. Information Technology student specializing in Data Analytics.
+I enjoy analyzing datasets, creating business dashboards, and building
+SQL databases that help organizations make data-driven decisions.
+
+My goal is to become a professional Data Analyst and contribute by solving
+real-world business challenges using analytical thinking and modern
+data tools.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Technical Skills</h2>
+
+<div class="skills">
+
+<div class="skill">Python</div>
+
+<div class="skill">SQL</div>
+
+<div class="skill">Power BI</div>
+
+<div class="skill">Tableau</div>
+
+<div class="skill">Excel</div>
+
+<div class="skill">Machine Learning</div>
+
+<div class="skill">Pandas</div>
+
+<div class="skill">NumPy</div>
+
+<div class="skill">Statistics</div>
+
+<div class="skill">Data Cleaning</div>
+
+<div class="skill">EDA</div>
+
+<div class="skill">Git & GitHub</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2 class="title">Featured Projects</h2>
+
+<div class="projects">
+
+<div class="card">
+
+<h3>Fundraising Analytics Dashboard</h3>
+
+<p>
+Interactive Power BI dashboard analyzing fundraising campaigns,
+marketing performance, ROI, donations, and campaign success using
+business KPIs.
+</p>
+
+<a href="https://github.com/reshmad0814" target="_blank">
+View Project →
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>Nexus Pay SQL Database</h3>
+
+<p>
+Designed a complete relational database system for a digital payment
+application with optimized SQL queries, analytics, and reporting.
+</p>
+
+<a href="https://github.com/reshmad0814" target="_blank">
+View Project →
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>Aerox Aviation SQL Project</h3>
+
+<p>
+Designed an airline management database with ER modeling,
+business analysis, SQL queries, and operational reporting.
+</p>
+
+<a href="https://github.com/reshmad0814" target="_blank">
+View Project →
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">GitHub Statistics</h2>
+
+<div class="stats">
+
+<img src="https://github-readme-stats.vercel.app/api?username=reshmad0814&show_icons=true&theme=tokyonight">
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=reshmad0814&theme=tokyonight">
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=reshmad0814&layout=compact&theme=tokyonight">
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Education</h2>
+
+<div class="card">
+
+<h3>B.Sc. Information Technology</h3>
+
+<p>
+
+University of Mumbai
+
+<br><br>
+
+Specialization: Data Analytics
+
+<br><br>
+
+Expected Graduation: 2027
+
+</p>
+
+</div>
+
+</section>
+
+<section class="contact">
+
+<h2 class="title">Contact</h2>
+
+<p>📧 reshmadhadwad82@gmail.com</p>
+
+<p>
+🐙
+<a href="https://github.com/reshmad0814" target="_blank" style="color:#38bdf8;">
+github.com/reshmad0814
+</a>
+</p>
+
+<p>
+💼
+<a href="https://linkedin.com/" target="_blank" style="color:#38bdf8;">
+LinkedIn
+</a>
+</p>
+
+</section>
+
+<footer>
+
+© 2026 Reshma Dhadwad | Designed with HTML & CSS
+
+</footer>
+
+</body>
+</html>
