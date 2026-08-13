@@ -6,13 +6,13 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-          content="Reshma Dhadwad - Data Analyst Portfolio">
+          content="Reshma Dhadwad - Data Analyst and Data Science Portfolio">
 
     <title>Reshma Dhadwad | Data Analyst</title>
+
 
     <!-- Google Font -->
     <link rel="preconnect"
@@ -28,9 +28,9 @@
 
     <style>
 
-        /* =========================
+        /* ==============================
            GLOBAL
-        ========================= */
+        ============================== */
 
         * {
             margin: 0;
@@ -57,17 +57,21 @@
         }
 
 
-        /* =========================
+        /* ==============================
            NAVBAR
-        ========================= */
+        ============================== */
 
         nav {
             position: fixed;
             top: 0;
             width: 100%;
-            background: rgba(255, 255, 255, 0.95);
+
+            background: rgba(255, 255, 255, 0.96);
+
             backdrop-filter: blur(12px);
+
             border-bottom: 1px solid #e5e7eb;
+
             z-index: 1000;
         }
 
@@ -75,25 +79,33 @@
             height: 75px;
 
             display: flex;
+
             justify-content: space-between;
+
             align-items: center;
         }
 
         .logo {
             font-size: 22px;
+
             font-weight: 800;
+
             color: #2563eb;
         }
 
         .nav-links {
             display: flex;
+
             gap: 30px;
+
             list-style: none;
         }
 
         .nav-links a {
             color: #475569;
+
             font-size: 14px;
+
             font-weight: 500;
 
             transition: 0.3s;
@@ -104,14 +116,15 @@
         }
 
 
-        /* =========================
+        /* ==============================
            HERO
-        ========================= */
+        ============================== */
 
         .hero {
             min-height: 100vh;
 
             display: flex;
+
             align-items: center;
 
             padding-top: 75px;
@@ -126,21 +139,25 @@
 
         .hero-content {
             text-align: center;
+
             max-width: 850px;
+
             margin: auto;
         }
 
         .hello {
             display: inline-block;
 
-            padding: 8px 16px;
+            padding: 8px 17px;
 
             background: #eff6ff;
+
             color: #2563eb;
 
             border-radius: 30px;
 
-            font-size: 14px;
+            font-size: 13px;
+
             font-weight: 600;
 
             margin-bottom: 20px;
@@ -148,6 +165,7 @@
 
         .hero h1 {
             font-size: 60px;
+
             line-height: 1.15;
 
             color: #0f172a;
@@ -161,6 +179,7 @@
 
         .hero h2 {
             font-size: 24px;
+
             font-weight: 500;
 
             color: #64748b;
@@ -170,6 +189,7 @@
 
         .hero p {
             max-width: 700px;
+
             margin: auto;
 
             color: #64748b;
@@ -178,14 +198,15 @@
         }
 
 
-        /* =========================
+        /* ==============================
            BUTTONS
-        ========================= */
+        ============================== */
 
         .buttons {
             margin-top: 30px;
 
             display: flex;
+
             justify-content: center;
 
             gap: 15px;
@@ -199,6 +220,7 @@
             border-radius: 8px;
 
             font-size: 14px;
+
             font-weight: 600;
 
             transition: 0.3s;
@@ -206,30 +228,36 @@
 
         .primary {
             background: #2563eb;
+
             color: white;
         }
 
         .primary:hover {
             background: #1d4ed8;
+
             transform: translateY(-2px);
         }
 
         .secondary {
             border: 1px solid #d1d5db;
+
             color: #334155;
+
             background: white;
         }
 
         .secondary:hover {
             border-color: #2563eb;
+
             color: #2563eb;
+
             transform: translateY(-2px);
         }
 
 
-        /* =========================
+        /* ==============================
            SECTIONS
-        ========================= */
+        ============================== */
 
         section {
             padding: 100px 0;
@@ -237,11 +265,13 @@
 
         .section-heading {
             text-align: center;
+
             margin-bottom: 55px;
         }
 
         .section-heading h2 {
             font-size: 36px;
+
             color: #0f172a;
 
             margin-bottom: 10px;
@@ -253,26 +283,104 @@
 
         .section-heading p {
             color: #64748b;
+
             font-size: 15px;
         }
 
 
-        /* =========================
+        /* ==============================
            ABOUT
-        ========================= */
+        ============================== */
 
         .about {
             display: grid;
 
-            grid-template-columns: 1.4fr 1fr;
+            grid-template-columns: 0.8fr 1.2fr;
 
-            gap: 60px;
+            gap: 65px;
 
             align-items: center;
         }
 
+
+        /* PROFILE PHOTO */
+
+        .profile-container {
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+        }
+
+        .profile-wrapper {
+            position: relative;
+
+            width: 300px;
+
+            height: 300px;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+        }
+
+        .profile-wrapper::before {
+            content: "";
+
+            position: absolute;
+
+            width: 300px;
+
+            height: 300px;
+
+            border-radius: 50%;
+
+            border: 2px solid #dbeafe;
+        }
+
+        .profile-wrapper::after {
+            content: "";
+
+            position: absolute;
+
+            width: 275px;
+
+            height: 275px;
+
+            border-radius: 50%;
+
+            border: 1px solid #93c5fd;
+        }
+
+        .profile-img {
+            width: 245px;
+
+            height: 245px;
+
+            object-fit: cover;
+
+            border-radius: 50%;
+
+            border: 6px solid white;
+
+            box-shadow:
+                0 15px 40px
+                rgba(15, 23, 42, 0.15);
+
+            position: relative;
+
+            z-index: 2;
+        }
+
+
+        /* ABOUT TEXT */
+
         .about-text h3 {
-            font-size: 25px;
+            font-size: 27px;
+
             color: #0f172a;
 
             margin-bottom: 20px;
@@ -284,20 +392,19 @@
             margin-bottom: 15px;
         }
 
+
+        /* ABOUT INFO */
+
         .about-box {
+            margin-top: 25px;
+
             background: #f8fafc;
 
-            padding: 30px;
+            padding: 22px;
 
-            border-radius: 15px;
+            border-radius: 14px;
 
             border: 1px solid #e5e7eb;
-        }
-
-        .about-box h3 {
-            color: #0f172a;
-
-            margin-bottom: 20px;
         }
 
         .about-info {
@@ -305,11 +412,11 @@
 
             justify-content: space-between;
 
-            padding: 12px 0;
+            padding: 9px 0;
 
             border-bottom: 1px solid #e5e7eb;
 
-            font-size: 14px;
+            font-size: 13px;
         }
 
         .about-info:last-child {
@@ -322,13 +429,14 @@
 
         .about-info span:last-child {
             color: #2563eb;
+
             font-weight: 600;
         }
 
 
-        /* =========================
+        /* ==============================
            SKILLS
-        ========================= */
+        ============================== */
 
         .skills-grid {
             display: grid;
@@ -363,11 +471,13 @@
 
         .skill-icon {
             width: 45px;
+
             height: 45px;
 
             display: flex;
 
             align-items: center;
+
             justify-content: center;
 
             background: #eff6ff;
@@ -394,9 +504,9 @@
         }
 
 
-        /* =========================
+        /* ==============================
            PROJECTS
-        ========================= */
+        ============================== */
 
         .projects {
             background: #f8fafc;
@@ -436,9 +546,11 @@
         .project-number {
             color: #2563eb;
 
-            font-size: 13px;
+            font-size: 12px;
 
             font-weight: 700;
+
+            letter-spacing: 1px;
 
             margin-bottom: 12px;
         }
@@ -496,9 +608,9 @@
         }
 
 
-        /* =========================
+        /* ==============================
            CONTACT
-        ========================= */
+        ============================== */
 
         .contact {
             text-align: center;
@@ -561,9 +673,9 @@
         }
 
 
-        /* =========================
+        /* ==============================
            FOOTER
-        ========================= */
+        ============================== */
 
         footer {
             border-top: 1px solid #e5e7eb;
@@ -578,9 +690,9 @@
         }
 
 
-        /* =========================
+        /* ==============================
            RESPONSIVE
-        ========================= */
+        ============================== */
 
         @media (max-width: 850px) {
 
@@ -594,6 +706,12 @@
 
             .about {
                 grid-template-columns: 1fr;
+
+                text-align: center;
+            }
+
+            .about-box {
+                text-align: left;
             }
 
             .skills-grid {
@@ -622,6 +740,30 @@
                 grid-template-columns: 1fr;
             }
 
+            .profile-wrapper {
+                width: 250px;
+
+                height: 250px;
+            }
+
+            .profile-wrapper::before {
+                width: 250px;
+
+                height: 250px;
+            }
+
+            .profile-wrapper::after {
+                width: 230px;
+
+                height: 230px;
+            }
+
+            .profile-img {
+                width: 205px;
+
+                height: 205px;
+            }
+
             section {
                 padding: 70px 0;
             }
@@ -636,9 +778,9 @@
 <body>
 
 
-<!-- =========================
+<!-- ==============================
      NAVIGATION
-========================= -->
+============================== -->
 
 <nav>
 
@@ -678,9 +820,9 @@
 
 
 
-<!-- =========================
+<!-- ==============================
      HERO
-========================= -->
+============================== -->
 
 <header class="hero" id="home">
 
@@ -730,9 +872,9 @@
 
 
 
-<!-- =========================
+<!-- ==============================
      ABOUT
-========================= -->
+============================== -->
 
 <section id="about">
 
@@ -752,6 +894,25 @@
 
 
         <div class="about">
+
+
+            <!-- PROFILE PHOTO -->
+
+            <div class="profile-container">
+
+                <div class="profile-wrapper">
+
+                    <img
+                        class="profile-img"
+                        src="https://github.com/reshmad0814.png"
+                        alt="Reshma Dhadwad">
+
+                </div>
+
+            </div>
+
+
+            <!-- ABOUT CONTENT -->
 
             <div class="about-text">
 
@@ -777,56 +938,52 @@
                     insights.
                 </p>
 
-            </div>
+
+                <div class="about-box">
+
+                    <div class="about-info">
+
+                        <span>Education</span>
+
+                        <span>B.Sc. IT</span>
+
+                    </div>
 
 
-            <div class="about-box">
+                    <div class="about-info">
 
-                <h3>
-                    Quick Information
-                </h3>
+                        <span>Specialization</span>
 
-                <div class="about-info">
+                        <span>Data Science</span>
 
-                    <span>Education</span>
-
-                    <span>B.Sc. IT</span>
-
-                </div>
+                    </div>
 
 
-                <div class="about-info">
+                    <div class="about-info">
 
-                    <span>Specialization</span>
+                        <span>Focus</span>
 
-                    <span>Data Science</span>
+                        <span>Data Analytics</span>
 
-                </div>
-
-
-                <div class="about-info">
-
-                    <span>Focus</span>
-
-                    <span>Data Analytics</span>
-
-                </div>
+                    </div>
 
 
-                <div class="about-info">
+                    <div class="about-info">
 
-                    <span>Location</span>
+                        <span>Location</span>
 
-                    <span>India</span>
+                        <span>India</span>
 
-                </div>
+                    </div>
 
 
-                <div class="about-info">
+                    <div class="about-info">
 
-                    <span>Looking For</span>
+                        <span>Looking For</span>
 
-                    <span>Internships</span>
+                        <span>Internships</span>
+
+                    </div>
 
                 </div>
 
@@ -840,9 +997,9 @@
 
 
 
-<!-- =========================
+<!-- ==============================
      SKILLS
-========================= -->
+============================== -->
 
 <section id="skills">
 
@@ -979,9 +1136,9 @@
 
 
 
-<!-- =========================
+<!-- ==============================
      PROJECTS
-========================= -->
+============================== -->
 
 <section class="projects"
          id="projects">
@@ -995,7 +1152,7 @@
             </h2>
 
             <p>
-                Some of my data analytics and technology projects
+                My data analytics and technology projects
             </p>
 
         </div>
@@ -1004,7 +1161,7 @@
         <div class="projects-grid">
 
 
-            <!-- PROJECT 1 -->
+            <!-- PROJECT 01 -->
 
             <div class="project-card">
 
@@ -1055,7 +1212,7 @@
 
 
 
-            <!-- PROJECT 2 -->
+            <!-- PROJECT 02 -->
 
             <div class="project-card">
 
@@ -1105,7 +1262,7 @@
 
 
 
-            <!-- PROJECT 3 -->
+            <!-- PROJECT 03 -->
 
             <div class="project-card">
 
@@ -1151,7 +1308,7 @@
 
 
 
-            <!-- PROJECT 4 -->
+            <!-- PROJECT 04 -->
 
             <div class="project-card">
 
@@ -1208,9 +1365,9 @@
 
 
 
-<!-- =========================
+<!-- ==============================
      CONTACT
-========================= -->
+============================== -->
 
 <section id="contact">
 
@@ -1232,6 +1389,8 @@
             <div class="social-links">
 
 
+                <!-- GitHub -->
+
                 <a href="https://github.com/reshmad0814"
                    target="_blank"
                    class="social">
@@ -1241,7 +1400,8 @@
                 </a>
 
 
-                <!-- Replace with your LinkedIn URL -->
+                <!-- LinkedIn
+                     Replace with your actual LinkedIn URL -->
 
                 <a href="https://www.linkedin.com/"
                    target="_blank"
@@ -1252,6 +1412,8 @@
                 </a>
 
 
+                <!-- Email -->
+
                 <a href="mailto:reshmad.dhadwad82@gmail.com"
                    class="social">
 
@@ -1260,7 +1422,7 @@
                 </a>
 
 
-                <!-- Replace resume.pdf with your actual resume -->
+                <!-- Resume -->
 
                 <a href="assets/resume.pdf"
                    target="_blank"
@@ -1281,9 +1443,9 @@
 
 
 
-<!-- =========================
+<!-- ==============================
      FOOTER
-========================= -->
+============================== -->
 
 <footer>
 
